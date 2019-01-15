@@ -2,10 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title></title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <label for="writetext"></label>
+    <input type= "number" id="offset">
+    <br><br>
+    <input type="text" id="writeText">
+    <br><br>
+    <button type="submit" id="cipher" value="cipher"
+     onclick="cipherText()" class="boton1"> Cifrar</button>
+     <button type="submit" id="cipher" value="decipher"
+     onclick="decipherText()" class="boton1"> Descifrar</button> 
+
+
     <div id="root">
       <h1>Secret</h1>
     </div>
