@@ -1,32 +1,27 @@
 window.cipher = {
-  function cipherText() {
+  encode: (mensaje,offSet) => {
   const textC = "";
-  for (i = 0; i<text.length; i++) {
-    const ubication =(text.CharCodeAt(i)+ (document.getElementById("offs"));
-    const textCiph =String.fromCharCode(ubication);
+  const offSet= parseInt (offSet);
+    for (i >= 0; i<textC.length; i++) {
+    const newUbication =(mensaje.toUpperCase.CharCodeAt(i)- 65 + offSet)%26+65;
+    const textCiph =String.fromCharCode(newUbication);
     textC+=textCiph;
+
+    }
+    return textC;
+  },
+  decode:(mensaje2,offSet) => {
+    const offSet= parseInt (offSet);
+    const textD = "";
+      for (j >= 0; j<textD.length; j++) {
+      const newUbication2 =(mensaje2.toUpperCase.CharCodeAt(j)+ 65 - offSet)%26+65;
+      const textDeciph =String.fromCharCode(newUbication2);
+      textD+=textDeciph;
+      
+      }
+      return textD;
   }
-return textC;
-}
-function decipherText() {
-  const textD = "";
-  for (j = 0; j<textC.length; j++) {
-    const newUbication1 =(textC.CharCodeAt(j)+ (document.getElementById("offs"));
-    const textDeciph =String.fromCharCode(newUbication);
-    textD+=textDeciph;
-  }
-return textD;
-}
 
-
-
-
-
-
-
-//function cipherText() {
-//cipher.encode(offset, string);
-//function decipherText() {
-// cipher.decode(offset, string)
+};
 
 

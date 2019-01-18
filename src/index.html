@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <label for="writeText"></label>
-    <input type= "number" id="offs" value="offset">
+    <br>
+    <br>
+    <br>
+    <h1>SECRET TEXT</h1>
     <br><br>
-    <textarea name="text1" id="writeText"></textarea>
+    <form>
+      <div>
+    <label for="off">Elije el número de código: </label>
+    <input type= "number" id="offset">
+      </div>
+    </form> 
     <br><br>
-    <textarea name="text2" id="writeText"></textarea>
+    <br>
+    <textarea name="text1" id="writeText1" class= "in"></textarea>
     <br><br>
-    <button type="submit" id="cipher-botton" value="cipher"
-     onclick="cipherText()" class="boton1"> Cifrar</button>
-
-     <button type="submit" id="decipher-botton" value="decipher"
-     onclick="decipherText()" class="boton1"> Descifrar</button> 
-
-
-    <div id="root">
-      <h1>Secret</h1>
-    </div>
+    <textarea name="text2" id="writeText2" class="in"></textarea>
+    <br><br>
+    <input type="button" id="botton-C" onclick="mostrarMensaje()" class= "boton" value= "Cifrar">
+    <br><br>
+    <input type="button" id="botton-D" onclick="mostrarMensaje2()" class= "boton" value= "Decifrar"> 
+    <script src="index.js" ></script>
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
