@@ -2,31 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title></title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <div id="imagen">
+      <img src ="./assets/agujero.jpg">
+      </div>
   </head>
   <body>
     <br>
     <br>
     <br>
     <h1>SECRET TEXT</h1>
-    <br><br>
+    <br>
+    <br>
     <form>
-      <div>
-    <label for="off">Elije el número de código: </label>
-    <input type= "number" id="offset">
+      <div id="numeroCodigo">
+        <label for="off">Elije el número de código: </label>
+        
+        <input type= "number" id="offSet">
+      
       </div>
+    
     </form> 
     <br><br>
     <br>
     <textarea name="text1" id="writeText1" class= "in"></textarea>
     <br><br>
-    <textarea name="text2" id="writeText2" class="in"></textarea>
+    <textarea disabled name="text2" id="writeText2" class="in"></textarea>
     <br><br>
-    <input type="button" id="botton-C" onclick="mostrarMensaje()" class= "boton" value= "Cifrar">
+    <input type="button" id="botton-C" onclick="mostrarMensaje()" class= "boton" value= "CIFRAR">
     <br><br>
-    <input type="button" id="botton-D" onclick="mostrarMensaje2()" class= "boton" value= "Decifrar"> 
-    <script src="index.js" ></script>
+    <input type="button" id="botton-D" onclick="mostrarMensaje2()" class= "boton" value= "DESCIFRAR"> 
     <script src="cipher.js"></script>
+    <script src="index.js" ></script>
   </body>
 </html>

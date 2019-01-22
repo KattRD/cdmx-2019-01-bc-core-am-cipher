@@ -1,56 +1,66 @@
 * {
   font-family: monospace;
-  color: #2bbd33;
+  color:#2bbd33;
   background:black;
   box-sizing: border-box;
   margin:0 auto;
-  width: 300px;
+  width: 600px;
   text-align:center;
-};
+}
+#imagen.show{
+  
+}
+figcaption {
+  display:none; 
+  transition: all .5s;
+}
+#div:numeroCodigo.hover > figcaption {
+  display:block;
+  transition: all .5s;
+}
 
-h1 {
-  font-size:100px;
+#offSet{
+  width: 80px;
+  height: 40px;
+  padding: 20px;
+  font-size:15px;
+  background: #000;
+  color: hsla(120, 18%, 93%, 0.959);
+  border: 2px solid #1e7322;
+}
+
  
-};
+h1 {
+  font-size:30px;
+  font-family:'Righteous', cursive;
+ 
+}
+
 label {
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-};
+  font-size: 15px;
+  text-align: left;
+  color: hsla(120, 18%, 93%, 0.959);
+}
+
 .in { 
-  display: block;
+ 
   width: 100%;
   height: 100px;
   padding: 10px;
-  font-size:px;
-  background: #000;
-  color: #2bbd33;
-  border: 2px solid #1e7322;
-};
-#offset {
-  width: 20px;
-  height: 50px;
-  padding: 80px;
   font-size:16px;
   background: #000;
   color: #2bbd33;
   border: 2px solid #1e7322;
-};
+}
+
+
 .boton {
-  width: 500px;
-  margin: 400px auto;
-  padding: 1em 0;
+  width: 150px;
+  font-size:15px;
   text-align: center ;
-  position: relative;
-  border: none;
-  overflow: hidden;
-  z-index: 1;
-  outline:none;
-
-};
-
-
-
-
-
-
+  height: 50px;
+  padding: 5px;
+  background: #2bbd33;
+  color:  black;
+  display: inline-block;
+} 

@@ -1,22 +1,28 @@
 
 function mostrarMensaje(){
   let mensaje= document.getElementById("writeText1").value;
-  document.getElementById("writeText2").value= mensaje;
-  let offSet=document.getElementById("offSet").value; 
-  encode (mensaje,offSet);
+  let offSet=document.getElementById("offSet").value;
+  console.log(mensaje);
+  console.log(offSet);
   
-}; 
-  function mostrarMensaje2(){ 
-      let mensaje2= document.getElementById("writeText2").value;
-      document.getElementById("writeText1").value= mensaje2;
-      let offSet=document.getElementById("offSet").value;
- 
-}; 
+  let textC= cipher.encode(offSet,mensaje);
+  //console.log(textC);
+  console.log(textC);
+  document.getElementById("writeText2").value=textC;
+  
+
+} ;
+
+function mostrarMensaje2(){
+  let mensaje2= document.getElementById("writeText1").value;
+  //console.log(mensaje2)
+  let offSet2=document.getElementById("offSet").value;
+  let textC2= cipher.decode(offSet2,mensaje2);
+  document.getElementById("writeText2").value=textC2;
+  
+
+} ;
+
     
 
-
-
-
-window.cipher.encode(mensaje, offSet)
-window.cipher.encode(mensaje2, offSet)
 
