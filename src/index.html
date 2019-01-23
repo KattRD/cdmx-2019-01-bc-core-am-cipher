@@ -12,14 +12,18 @@
   </div>
 </head>
   <body>
-  <div class ="container" id="container"style="display:none;">
+  <div class ="container" id="container" style="display:none;">
+    <figure>
+      <img src="./assets/agujero.jpg" id="imagen2" alt="">
+    </figure>
     <h1>SECRETEXT</h1>
     <br>
     <br>
-    <form>
-        <label for="off">Elije el número de código: </label>
-        <input type= "number" id="offSet">
-    </form> 
+    <label for="off">Elije el número de código: </label>
+      <div class="tooltip">
+        <input type= "number"  id="offSet">
+        <span class="tooltiptext">Número de desplazamiento de letra</span>
+      </div>
     <br><br>
     <br>
     <textarea name="text1" id="writeText1" class= "in"></textarea>

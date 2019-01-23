@@ -8,7 +8,10 @@
   text-align:center;
   
 }
-
+#imagen2{
+  width: 120px;
+  height: auto;
+}
 #imagen{
     width: 100%;
     height: auto;
@@ -16,12 +19,33 @@
     margin:0 auto;
   
   }
-  .container{
-display:block;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    
+    color:#1e7322;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+.container{
+  display:block;
 
   }
-  .contanier.show{
-display:none;
+.contanier.show{
+  display:none;
   }
 
 #offSet{
@@ -36,9 +60,8 @@ display:none;
 
  
 h1 {
-  font-size:100px;
-  
-  font-family:'Righteous', cursive;
+  font-size:80px;
+  font-family:'Righteous';
   text-shadow: 10px 10px 10px white;
  
 }
