@@ -2,7 +2,7 @@ window.cipher = {
   encode: (offSet,mensaje) => {
 
     let mensajeC=""; 
-
+    let i= 0;
     //console.log(mensaje.length)
     for (i = 0; i<mensaje.length; i++) {
     // Capturo la letra
@@ -22,7 +22,7 @@ window.cipher = {
   decode: (offSet2,mensaje2) => {
 
     let mensajeC2=""; 
-
+    let j= 0;
     //console.log(mensaje.length)
     for (j = 0; j<mensaje2.length; j++) {
     // Capturo la letra

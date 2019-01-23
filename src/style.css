@@ -6,24 +6,29 @@
   margin:0 auto;
   width: 600px;
   text-align:center;
-}
-#imagen.show{
   
 }
-figcaption {
-  display:none; 
-  transition: all .5s;
-}
-#div:numeroCodigo.hover > figcaption {
-  display:block;
-  transition: all .5s;
-}
+
+#imagen{
+    width: 100%;
+    height: auto;
+    filter: contrast(1000%);
+    margin:0 auto;
+  
+  }
+  .container{
+display:block;
+
+  }
+  .contanier.show{
+display:none;
+  }
 
 #offSet{
   width: 80px;
   height: 40px;
   padding: 20px;
-  font-size:15px;
+  font-size:18px;
   background: #000;
   color: hsla(120, 18%, 93%, 0.959);
   border: 2px solid #1e7322;
@@ -31,13 +36,15 @@ figcaption {
 
  
 h1 {
-  font-size:30px;
+  font-size:100px;
+  
   font-family:'Righteous', cursive;
+  text-shadow: 10px 10px 10px white;
  
 }
 
 label {
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   color: hsla(120, 18%, 93%, 0.959);
 }
@@ -47,7 +54,7 @@ label {
   width: 100%;
   height: 100px;
   padding: 10px;
-  font-size:16px;
+  font-size:20px;
   background: #000;
   color: #2bbd33;
   border: 2px solid #1e7322;
@@ -56,11 +63,13 @@ label {
 
 .boton {
   width: 150px;
-  font-size:15px;
+  font-size:20px;
+  font-family:'Righteous', cursive;
   text-align: center ;
   height: 50px;
+  border-radius: 10px;
   padding: 5px;
   background: #2bbd33;
-  color:  black;
+  color: white;
   display: inline-block;
 } 
