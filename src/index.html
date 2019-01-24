@@ -6,33 +6,40 @@
     <title>Secretext Codificador y Decodificador</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    
+ 
     <div class="container show">
-      <input type="image" class="img" id="imagen" src ="./assets/agujero.jpg" onclick="mostrar()";>
-  </div>
+      
+      <input type="image" class="img" id="imagen" src ="./assets/intro.png" onclick="mostrar()";>
+    
+    </div>
 </head>
   <body>
   <div class ="container" id="container" style="display:none;">
+      <figure>
+          <img src="./assets/code.jpg" id="backimg" alt="Fondo"/>
+        </figure>
     <figure>
       <img src="./assets/agujero.jpg" id="imagen2" alt="">
     </figure>
-    <h1>SECRETEXT</h1>
+    <h1>SECRET KEY</h1>
     <br>
     <br>
-    <label for="off">Elije el número de código: </label>
+    <label for="off">Llave de Cifrado:</label>
       <div class="tooltip">
         <input type= "number"  id="offSet">
         <span class="tooltiptext">Número de desplazamiento de letra</span>
       </div>
     <br><br>
     <br>
-    <textarea name="text1" id="writeText1" class= "in"></textarea>
+    <textarea name="text1" id="writeText1" class= "in" placeholder="Escribe la palabra a cifrar/descifrar"></textarea>
+    <br><br>
+    <input type="button" id="botton-C" onclick="mensaje()" class= "boton" value= "Cifrar">
+    
+    <input type="button" id="botton-D" onclick="mensaje2()" class= "boton" value= "Descifrar"> 
     <br><br>
     <textarea disabled name="text2" id="writeText2" class="in"></textarea>
     <br><br>
-    <input type="button" id="botton-C" onclick="mensaje()" class= "boton" value= "CIFRAR">
     
-    <input type="button" id="botton-D" onclick="mensaje2()" class= "boton" value= "DESCIFRAR"> 
   </div>
     <script src="cipher.js"></script>
     <script src="index.js" ></script>

@@ -4,19 +4,33 @@
   background:black;
   box-sizing: border-box;
   margin:0 auto;
-  width: 600px;
+  width: 80%;
   text-align:center;
   
 }
+#text{
+  font-size:80px;
+  
+}
+
+#backimg{
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
 #imagen2{
   width: 120px;
   height: auto;
 }
 #imagen{
-    width: 100%;
-    height: auto;
-    filter: contrast(1000%);
-    margin:0 auto;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+    
   
   }
 .tooltip {
@@ -28,7 +42,6 @@
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    
     color:#1e7322;
     text-align: center;
     border-radius: 6px;
@@ -44,9 +57,7 @@
   display:block;
 
   }
-.contanier.show{
-  display:none;
-  }
+  
 
 #offSet{
   width: 80px;
@@ -60,6 +71,15 @@
 
  
 h1 {
+  
+  color:rgb(136, 255, 0);
+  font-size:50px;
+  font-family:'Righteous';
+  text-shadow: 10px 10px 10px #2189b3b9;
+  text-align:center;
+  margin:0 auto;
+}
+#inicio {
   font-size:80px;
   font-family:'Righteous';
   text-shadow: 10px 10px 10px white;
@@ -74,25 +94,31 @@ label {
 
 .in { 
  
-  width: 100%;
-  height: 100px;
+  width: 80%;
+  height: 80px;
   padding: 10px;
   font-size:20px;
   background: #000;
   color: #2bbd33;
   border: 2px solid #1e7322;
 }
+#writeText1::placeholder,
+#writeText1::-webkit-input-
+placeholder{
+  color:white;
+  font-size:10px;
+}
 
 
 .boton {
   width: 150px;
-  font-size:20px;
-  font-family:'Righteous', cursive;
+  font-size:18px;
+  
   text-align: center ;
-  height: 50px;
+  height: 30px;
   border-radius: 10px;
   padding: 5px;
-  background: #2bbd33;
+  background: #2189b3b9;
   color: white;
   display: inline-block;
 } 
