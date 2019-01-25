@@ -1,18 +1,50 @@
 * {
   font-family: monospace;
-  color:#2bbd33;
+  
   background:black;
   box-sizing: border-box;
   margin:0 auto;
-  width: 80%;
+  width: 90%;
   text-align:center;
   
 }
-#text{
-  font-size:80px;
+
+
+p{
+  color:rgb(136, 255, 0);
+  font-size:70px;
+  font-family:'Righteous';
+ 
+  text-align:center;
+  margin:0 auto;
+ 
   
 }
-
+body{
+  background:palegreen;
+  width: 60%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+}
+#imagen3{
+    width: 60%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    filter:contrast(200%);
+    
+}
+#instrucciones{
+  font-size: 20px;
+  color: #89d3f3;
+}
+#instr{
+  width: 100%;
+  height: 0 auto;
+  color:white;
+  padding-top: 12%;
+} 
 #backimg{
   position: fixed;
   z-index: -1;
@@ -25,13 +57,11 @@
   height: auto;
 }
 #imagen{
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-    
-  
+  width: 90%;
+  height: auto;
+  padding-top: 15%;
+  filter:contrast(200%);
+
   }
 .tooltip {
     position: relative;
@@ -58,6 +88,12 @@
 
   }
   
+  .container1{
+    background:black;
+    padding-bottom: 15%;
+    width: 80%;
+  
+    }
 
 #offSet{
   width: 80px;
@@ -73,7 +109,7 @@
 h1 {
   
   color:rgb(136, 255, 0);
-  font-size:50px;
+  font-size:80px;
   font-family:'Righteous';
   text-shadow: 10px 10px 10px #2189b3b9;
   text-align:center;
@@ -113,12 +149,11 @@ placeholder{
 .boton {
   width: 150px;
   font-size:18px;
-  
   text-align: center ;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
   padding: 5px;
   background: #2189b3b9;
-  color: white;
-  display: inline-block;
+  color:white;
+  display:inline-block;
 } 

@@ -2,15 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport">
     <title>Secretext Codificador y Decodificador</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
  
-    <div class="container show">
-      
-      <input type="image" class="img" id="imagen" src ="./assets/intro.png" onclick="mostrar()";>
-    
+    <div class="container1" id="imagen"> 
+      <p>Secret Key</p>
+          <form id="instr">
+            <div id="instrucciones"><a>INSTRUCCIONES:</a>
+            <br><br>S
+              <ul>
+                <li>Escoje el número de posiciones que se desplazarán las letras para cifrar o descifrar.</li>
+                <li>Ingresa tu texto, sin espacios, sin números y/o símbolos.</li>
+                <li>Cifra o descifra según el caso.</li>
+              </ul>
+            </div>
+          </form>
+      <input type="image"src="./assets/key.png" id="imagen3" onclick="mostrar()";>
     </div>
 </head>
   <body>
